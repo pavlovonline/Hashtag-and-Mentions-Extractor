@@ -19,6 +19,8 @@
 		1296DA9B16FCB46000F08CF6 /* MainStoryboard_iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1296DA9916FCB46000F08CF6 /* MainStoryboard_iPhone.storyboard */; };
 		1296DA9E16FCB46000F08CF6 /* MainStoryboard_iPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1296DA9C16FCB46000F08CF6 /* MainStoryboard_iPad.storyboard */; };
 		1296DAA116FCB46000F08CF6 /* extractorViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1296DAA016FCB46000F08CF6 /* extractorViewController.m */; };
+		1296DAAC16FCB4C200F08CF6 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1296DAAB16FCB4C200F08CF6 /* ViewController.m */; };
+		1296DAAF16FCB65B00F08CF6 /* Extractor.m in Sources */ = {isa = PBXBuildFile; fileRef = 1296DAAE16FCB4D200F08CF6 /* Extractor.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -39,6 +41,10 @@
 		1296DA9D16FCB46000F08CF6 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard_iPad.storyboard; sourceTree = "<group>"; };
 		1296DA9F16FCB46000F08CF6 /* extractorViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = extractorViewController.h; sourceTree = "<group>"; };
 		1296DAA016FCB46000F08CF6 /* extractorViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = extractorViewController.m; sourceTree = "<group>"; };
+		1296DAAA16FCB4C200F08CF6 /* ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		1296DAAB16FCB4C200F08CF6 /* ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		1296DAAD16FCB4D200F08CF6 /* Extractor.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Extractor.h; sourceTree = "<group>"; };
+		1296DAAE16FCB4D200F08CF6 /* Extractor.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Extractor.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -85,12 +91,11 @@
 		1296DA8716FCB46000F08CF6 /* Hashtag+Mentions Extractor */ = {
 			isa = PBXGroup;
 			children = (
-				1296DA9016FCB46000F08CF6 /* extractorAppDelegate.h */,
-				1296DA9116FCB46000F08CF6 /* extractorAppDelegate.m */,
 				1296DA9916FCB46000F08CF6 /* MainStoryboard_iPhone.storyboard */,
-				1296DA9C16FCB46000F08CF6 /* MainStoryboard_iPad.storyboard */,
-				1296DA9F16FCB46000F08CF6 /* extractorViewController.h */,
-				1296DAA016FCB46000F08CF6 /* extractorViewController.m */,
+				1296DAAA16FCB4C200F08CF6 /* ViewController.h */,
+				1296DAAB16FCB4C200F08CF6 /* ViewController.m */,
+				1296DAAD16FCB4D200F08CF6 /* Extractor.h */,
+				1296DAAE16FCB4D200F08CF6 /* Extractor.m */,
 				1296DA8816FCB46000F08CF6 /* Supporting Files */,
 			);
 			path = "Hashtag+Mentions Extractor";
@@ -99,6 +104,11 @@
 		1296DA8816FCB46000F08CF6 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				1296DA9016FCB46000F08CF6 /* extractorAppDelegate.h */,
+				1296DA9C16FCB46000F08CF6 /* MainStoryboard_iPad.storyboard */,
+				1296DA9F16FCB46000F08CF6 /* extractorViewController.h */,
+				1296DAA016FCB46000F08CF6 /* extractorViewController.m */,
+				1296DA9116FCB46000F08CF6 /* extractorAppDelegate.m */,
 				1296DA8916FCB46000F08CF6 /* Hashtag+Mentions Extractor-Info.plist */,
 				1296DA8A16FCB46000F08CF6 /* InfoPlist.strings */,
 				1296DA8D16FCB46000F08CF6 /* main.m */,
@@ -181,6 +191,8 @@
 				1296DA8E16FCB46000F08CF6 /* main.m in Sources */,
 				1296DA9216FCB46000F08CF6 /* extractorAppDelegate.m in Sources */,
 				1296DAA116FCB46000F08CF6 /* extractorViewController.m in Sources */,
+				1296DAAC16FCB4C200F08CF6 /* ViewController.m in Sources */,
+				1296DAAF16FCB65B00F08CF6 /* Extractor.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -278,7 +290,9 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Hashtag+Mentions Extractor/Hashtag+Mentions Extractor-Prefix.pch";
 				INFOPLIST_FILE = "Hashtag+Mentions Extractor/Hashtag+Mentions Extractor-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -289,7 +303,9 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Hashtag+Mentions Extractor/Hashtag+Mentions Extractor-Prefix.pch";
 				INFOPLIST_FILE = "Hashtag+Mentions Extractor/Hashtag+Mentions Extractor-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
