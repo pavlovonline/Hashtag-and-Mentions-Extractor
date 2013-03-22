@@ -2,7 +2,7 @@ HASHTAG + MENTIONS Extractor
 
 You can use this code to extract #hashtags or @mentions from a given NSString.
 
-The extractor takes in a string, runs though it and outputs an array of individual hashtags (prefixed with #) and an array of mentions (no prefixes).
+The extractor takes in a string, runs though it and outputs an array of individual hashtags (prefixed with #) and an array of mentions (no prefixes). If you don't want the "#" left in, edit the extractor.m inside the dispatch.
 
 The extractor removes common punctuation (commas, periods, question marks, and exclamation marks). 
 
